@@ -61,7 +61,7 @@ def unpack(bundled_path=None):
         elif mime == "text/javascript":
             rel = f"js/{JS_NAMES.get(uid, uid + '.js')}"
         elif mime == "application/json":
-            rel = ".image-slots.state.json"
+            rel = "image-slots.state.json"
         else:
             continue
         uuid_to_path[uid] = rel
